@@ -71,6 +71,9 @@
                             <constraint firstItem="9uE-DF-yI9" firstAttribute="top" secondItem="ahW-cE-OUb" secondAttribute="bottom" constant="40" id="u12-33-QPP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="9uE-DF-yI9" id="ozR-hf-RhJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHb-Np-VdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

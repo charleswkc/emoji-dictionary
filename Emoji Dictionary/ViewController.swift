@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(indexPath.row)
+        //print(indexPath.row)
         let cell = UITableViewCell()
         cell.textLabel?.text = emojis[indexPath.row]
         return cell
@@ -54,7 +54,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(sender)
+        //print(sender)
+        let defVC = segue.destination as! DefinitionViewController
+        defVC.emoji = sender as! String
     }
     
     override func didReceiveMemoryWarning() {
