@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var myTableView: UITableView! //need to define the table specs - rows, what things goes inside
     
+    var emojis = ["😁","😜","😭","💩","😈","😡"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    /* //to have 6 rows of Hello there
+     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,7 +35,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+    */
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return emojis.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print(indexPath.row)
+        let cell = UITableViewCell()
+        cell.textLabel?.text = emojis[indexPath.row]
+        return cell
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
