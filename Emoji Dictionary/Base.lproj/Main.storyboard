@@ -86,6 +86,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="f9A-UQ-yFu" id="nAg-jK-nYj"/>
+                        <outlet property="categoryLabel" destination="0RR-F1-yDg" id="C0l-2P-JPD"/>
                         <outlet property="definitionLabel" destination="0Z4-aR-iBb" id="NxL-J9-3lu"/>
                         <outlet property="emojiLabel" destination="9uE-DF-yI9" id="ozR-hf-RhJ"/>
                     </connections>
